@@ -1,0 +1,39 @@
+{
+  "name": "wilderProjectTypescriptBack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "ts-node-dev --transpile-only --respawn ./src/index.ts",
+    "prod": "tsc && node ./build/src/index.js",
+    "debug": "tsc && node --inspect .build/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnerBerk/wilderProjectTypescriptBack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OnerBerk/wilderProjectTypescriptBack/issues"
+  },
+  "homepage": "https://github.com/OnerBerk/wilderProjectTypescriptBack#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "cors": "^2.8.5",
+    "typescript-rest": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "ts-node-dev": "^1.1.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "@types/cors": "^2.8.10",
+    "@types/mongoose": "^5.10.5",
+    "node-dev": "^6.7.0",
+    "nodemon": "^2.0.7"
+  }
+}
